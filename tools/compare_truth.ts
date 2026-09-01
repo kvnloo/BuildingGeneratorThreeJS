@@ -26,6 +26,7 @@ const p: BuildingParams = {
   acUnit: truth.params["AC UNIT"],
   roofProbability: truth.params["Roof Probability"],
   clothlineProbability: truth.params["Clothline Probability"],
+  lights: truth.params["Lights"] ?? 0.546,
   windowType: truth.params["window type"],
   windowOpenAmount: truth.params["window open amount"],
   curtainClose: truth.params["curtain close"],

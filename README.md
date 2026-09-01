@@ -17,9 +17,9 @@ npm install
 npm run dev
 ```
 
-All 18 generator parameters from the Blender modifier (floors, footprint, AC/clothline/
-lights probabilities, window type & open amount, curtains, store state, seed, low-poly
-toggle…) are exposed as live sliders.
+Live sliders cover the ported generator inputs (floors, footprint, AC / clothline /
+lights probabilities, window type & open amount, curtains, store state, seed). The
+Blender modifier also has deform and low-poly toggles; those are not in this port yet.
 
 ## Re-exporting the asset kit
 

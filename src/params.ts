@@ -6,6 +6,7 @@ export interface BuildingParams {
   acUnit: number;
   roofProbability: number;
   clothlineProbability: number;
+  lights: number;
   windowType: number;
   windowOpenAmount: number;
   curtainClose: number;
@@ -26,6 +27,7 @@ export function defaultParams(): BuildingParams {
     acUnit: 0.724,
     roofProbability: 0.512,
     clothlineProbability: 0.709,
+    lights: 0.546,
     windowType: 0.75,
     windowOpenAmount: 0.0,
     curtainClose: 0.0,
