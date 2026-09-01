@@ -14,6 +14,7 @@ import {
 } from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import type { Placement } from "./generator";
+import { collectionChildCount } from "./kitNames";
 
 function tex(loader: TextureLoader, url: string, srgb = false): Texture {
   const t = loader.load(url);
@@ -131,8 +132,7 @@ export class Kit {
   }
 
   count(collection: string): number {
-    const c = this.manifest.collections[collection];
-    return c?.children?.length || 1;
+    return collectionChildCount(this.manifest, collection);
   }
 
   /** Set the floor emissive intensity on BOTH the exterior floor material and its
