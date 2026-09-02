@@ -378,6 +378,7 @@ fBuild.add(params, "width", 2, 40, 1);
 fBuild.add(params, "acUnit", 0, 1, 0.01).name("AC unit");
 fBuild.add(params, "roofProbability", 0, 1, 0.01).name("window awning");
 fBuild.add(params, "clothlineProbability", 0, 1, 0.01).name("clothline");
+fBuild.add(params, "lights", 0, 1, 0.01).name("lights");
 fBuild.add(params, "windowType", 0, 1, 0.01).name("window type");
 fBuild.add(params, "windowOpenAmount", 0, 1, 0.01).name("window open");
 fBuild.add(params, "curtainClose", 0, 1, 0.01).name("curtain close");
